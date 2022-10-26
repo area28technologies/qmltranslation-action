@@ -1,0 +1,17 @@
+name: QML Translation
+description: to run qt command
+branding:
+  icon: 'anchor'  
+  color: 'blue'
+inputs:
+  command:
+    description: "Your command (qt)"
+    required: true
+outputs:
+  result:
+    description: "Output returned by command"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.command }}
