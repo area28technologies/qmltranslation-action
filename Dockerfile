@@ -5,6 +5,4 @@ RUN apt-get install zsh -y
 
 COPY run.sh /run.sh
 
-VOLUME /
-
 ENTRYPOINT ["/run.sh"]
