@@ -1,0 +1,8 @@
+name: QML Translation
+description: runs qml lupdate and lrelease
+branding:
+  icon: minimize
+  color: orange
+runs:
+  using: docker
+  image: Dockerfile
