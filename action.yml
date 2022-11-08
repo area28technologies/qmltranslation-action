@@ -1,8 +1,17 @@
 name: QML Translation
-description: runs qml lupdate and lrelease
+description: to run qt command
 branding:
-  icon: minimize
-  color: orange
+  icon: 'anchor'  
+  color: 'blue'
+inputs:
+  command:
+    description: "Your command (qt)"
+    required: true
+outputs:
+  result:
+    description: "Output returned by command"
 runs:
-  using: docker
-  image: Dockerfile
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.command }}
