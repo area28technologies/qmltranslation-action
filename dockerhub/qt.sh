@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/zsh
 
 set -e  # exit on error
 set -o nounset  # exit when encounters an unset variable
